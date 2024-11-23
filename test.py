@@ -19,7 +19,7 @@ Settings.llm = Ollama(model="qwen2.5-coder", request_timeout=600.0)
 
 
 
-data_file = ['D:/work/self/Llamaindex-sample/data/a']
+data_file = ['D:/work/self/Llamaindex-sample/data/a.txt']
 documents = SimpleDirectoryReader(input_files=data_file).load_data()
 index = VectorStoreIndex.from_documents(documents, transformations=[SentenceSplitter(chunk_size=256)])
 

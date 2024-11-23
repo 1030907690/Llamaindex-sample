@@ -5,3 +5,5 @@ llama-index-embeddings-langchain
 langchain-huggingface
 sentence-transformers
 ollama
+
+

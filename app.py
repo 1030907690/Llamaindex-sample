@@ -65,10 +65,10 @@ generation_config = prepare_generation_config()
 # Function to initialize models
 @st.cache_resource
 def init_models():
-    embed_model = OllamaEmbedding(model_name="nomic-embed-text")
+    embed_model = OllamaEmbedding(model_name="quentinz/bge-small-zh-v1.5")
     Settings.embed_model = embed_model
 
-    llm = Ollama(model="llama3.1", request_timeout=360.0,
+    llm = Ollama(model="qwen2.5-coder", request_timeout=360.0,
                  num_ctx=generation_config['num_ctx'],
                  temperature=generation_config['temperature'])
     Settings.llm = llm

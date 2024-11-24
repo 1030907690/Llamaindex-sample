@@ -3,6 +3,7 @@
 - 在conda中运行
 ```
 conda create -n llamaindex  python=3.10.13
+conda activate  llamaindex
 
 pip install -r requirements.txt
 ```

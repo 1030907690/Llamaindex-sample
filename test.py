@@ -24,6 +24,6 @@ documents = SimpleDirectoryReader(input_files=data_file).load_data()
 index = VectorStoreIndex.from_documents(documents, transformations=[SentenceSplitter(chunk_size=256)])
 
 query_engine = index.as_query_engine(similarity_top_k=5)
-response = query_engine.query("你能帮我做什么?")
+response = query_engine.query("介绍一下CSDN博主愤怒的苹果ext")
 print(response)
 
